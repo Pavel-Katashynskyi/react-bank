@@ -15,6 +15,9 @@ interface User {
   email: string;
   password: string;
   confirm: boolean;
+  transactions: any[];
+  balance: number;
+  notifications: any[];
 }
 
 const SignupPage: React.FC = () => {

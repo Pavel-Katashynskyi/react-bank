@@ -1,17 +1,16 @@
-// components/SignupPage.js
 import React, { useState } from "react";
-import Input from "../../components/input";
+import Input from "../../component/input";
 
 import BackendSimulation from "../../utils/BackEnd";
-import Page from "../../components/page";
-import BackButton from "../../components/backbutton";
+import Page from "../../component/page";
+import BackButton from "../../component/back-button";
 
 import "./index.css";
 
 import { useAuth } from "../../utils/AuthContext";
 
-import Break from "../../components/break";
-import Box from "../../components/box";
+import Break from "../../component/break";
+import Box from "../../component/box";
 
 import stripe_logo from "./stripe.svg";
 import coinbase_logo from "./coinbase.svg";

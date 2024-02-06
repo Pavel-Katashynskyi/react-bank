@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Input from "../../components/input";
+import Input from "../../component/input";
 
-import Page from "../../components/page";
-import BackButton from "../../components/backbutton";
-import Button from "../../components/button";
+import Page from "../../component/page";
+import BackButton from "../../component/back-button";
+import Button from "../../component/button";
 import "./index.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -12,7 +12,7 @@ import { useAuth } from "../../utils/AuthContext";
 
 import danger_logo from "./danger.svg";
 
-import PasswordInput from "../../components/input-password";
+import PasswordInput from "../../component/input-password";
 
 const SigninPage = () => {
   const { authContextData } = useAuth();

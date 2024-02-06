@@ -7,7 +7,7 @@
     flex-shrink: 0;
     border-radius: 24px 24px 32px 32px;
   
-    background: url("../../../public/assets/mesh1.png"),
+    background: url("../../../public/mesh1.png"),
       lightgray 50% / cover no-repeat;
     height: 202px;
     border-bottom-left-radius: 0;

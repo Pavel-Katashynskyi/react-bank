@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-import Page from "../../components/page";
-import BackButton from "../../components/backbutton";
+import Page from "../../component/page";
+import BackButton from "../../component/back-button";
 
 import "./index.css";
 
-import Notification from "../../components/notification";
+import Notification from "../../component/notification";
 
-import Box from "../../components/box";
+import Box from "../../component/box";
 
 import { useAuth } from "../../utils/AuthContext";
 

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Input from "../../components/input";
+import Input from "../../component/input";
 
 import BackendSimulation from "../../utils/BackEnd";
-import Page from "../../components/page";
-import BackButton from "../../components/backbutton";
-import Button from "../../components/button";
+import Page from "../../component/page";
+import BackButton from "../../component/back-button";
+import Button from "../../component/button";
 
 import "./index.css";
 
@@ -51,8 +51,6 @@ const SendPage = () => {
       if (res.ok) {
         setBalance(data.balance);
       }
-      // const userNotifications = await backend.getusernotifications();
-      // setNotifications(userNotifications.slice(0, 7));
     };
 
     fetchBalance();
@@ -61,8 +59,6 @@ const SendPage = () => {
   const validateAmount = (amount) => {
     const regex =
       /^(?!$|\s)(?:(?!^0\.00$)^\d{1,6}(?:\.\d{1,2})?$|^(?!^0$)\d{1,6}$)/;
-
-    // const balance = backend.getbalance();
 
     return (
       regex.test(amount) &&

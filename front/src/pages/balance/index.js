@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Page from "../../components/page";
+import Page from "../../component/page";
 
 import { useNavigate } from "react-router-dom";
 
@@ -11,8 +11,8 @@ import settings_logo from "./settings.svg";
 import notifications_logo from "./notifications.svg";
 import receive_logo from "./receive.svg";
 import send_logo from "./send.svg";
-import Transaction from "../../components/transaction";
-import { formatAmount } from "../../components/format-amount";
+import Transaction from "../../component/transaction";
+import { formatAmount } from "../../component/format-amount";
 import { useAuth } from "../../utils/AuthContext";
 
 const BalancePage = () => {

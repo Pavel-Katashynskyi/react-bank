@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Input from "../../components/input";
+import Input from "../../component/input";
 
 import BackendSimulation from "../../utils/BackEnd";
-import Page from "../../components/page";
-import BackButton from "../../components/backbutton";
-import Button from "../../components/button";
+import Page from "../../component/page";
+import BackButton from "../../component/back-button";
+import Button from "../../component/button";
 import "./index.css";
 
 import { useNavigate } from "react-router-dom";
