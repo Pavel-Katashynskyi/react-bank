@@ -1,74 +1,13 @@
-.page {
-  padding: 0;
-  margin: 0 auto;
-  width: 393px;
-  height: 852px;
-  border-radius: 24px;
-  background: #fff;
-  position: relative;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.money {
-  width: 601.536px;
-  height: 601.536px;
-
-  flex-shrink: 0;
-  background: url("/public/money.png"),
-    transparent 50% / cover no-repeat;
-
-  position: absolute;
-  top: 0px;
-  left: -209px;
-}
-
-.rectangle {
-  width: 393px;
-  height: 583px;
-  flex-shrink: 0;
-  border-radius: 24px 24px 32px 32px;
-
-  background: linear-gradient(180deg, #5e3ce2 0%, #8570d9 100%);
-}
-
-.mesh {
-  opacity: 0.75;
-  background: url("/public/home.png"),
-    lightgray 50% / cover no-repeat;
-  mix-blend-mode: overlay;
-  width: 393px;
-  height: 583px;
-  flex-shrink: 0;
-  border-radius: 24px 24px 32px 32px;
-}
-
-h1 {
-  font-weight: bold;
-  font-size: 42px;
-  position: absolute;
-  color: #fff;
-  left: 138px;
-  top: 107px;
-
-  z-index: 2;
-}
-
-p {
-  font-size: 20px;
-  position: absolute;
-  color: #fff;
-  left: 103px;
-  top: 165px;
-
-  z-index: 2;
-}
-
-.linkstyle {
-  text-decoration: none;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  gap: 12px;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
