@@ -68,7 +68,7 @@ const SignupPage: React.FC = () => {
 
     const signupResult = async (): Promise<void> => {
       const res = await fetch(
-        `http://localhost:4000/signup/?email=${email}&password=${password}`
+        `http://localhost:3000/signup/?email=${email}&password=${password}`
       );
       const data = await res.json();
 

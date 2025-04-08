@@ -18,7 +18,7 @@ const TransactionPage = () => {
   useEffect(() => {
     const fetchTransactions = async () => {
       const res = await fetch(
-        `http://localhost:4000/balance/?email=${userData?.email}`
+        `http://localhost:3000/balance/?email=${userData?.email}`
       );
       const data = await res.json();
 

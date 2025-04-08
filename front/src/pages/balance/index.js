@@ -25,7 +25,7 @@ const BalancePage = () => {
   React.useEffect(() => {
     const fetchTransactions = async () => {
       const res = await fetch(
-        `http://localhost:4000/balance/?email=${userData.email}`
+        `http://localhost:3000/balance/?email=${userData.email}`
       );
       const data = await res.json();
 
@@ -38,7 +38,7 @@ const BalancePage = () => {
 
     const fetchBalance = async () => {
       const res = await fetch(
-        `http://localhost:4000/getbalance/?email=${userData.email}`
+        `http://localhost:3000/getbalance/?email=${userData.email}`
       );
       const data = await res.json();
 

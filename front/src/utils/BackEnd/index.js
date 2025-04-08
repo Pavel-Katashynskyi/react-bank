@@ -31,13 +31,6 @@ const BackendSimulation = () => {
     // Створення нового користувача
     const transactions = [
       {
-        id: 2,
-        type: "Sending",
-        amount: -30,
-        recipient: "John Doe",
-        time: "2023-11-17T14:45:00",
-      },
-      {
         id: 1,
         type: "Receipt",
         amount: 1250,
@@ -102,7 +95,7 @@ const BackendSimulation = () => {
   const addtransaction = (email, type, amountstr, paymentSystem, time) => {
     const addTransactionResult = async () => {
       const res = await fetch(
-        `http://localhost:4000/transactions/?email=${email}&type=${type}&amountstr=${amountstr}&paymentSystem=${paymentSystem}&time=${time}`
+        `http://localhost:3000/transactions/?email=${email}&type=${type}&amountstr=${amountstr}&paymentSystem=${paymentSystem}&time=${time}`
       );
       const data = await res.json();
 
@@ -148,7 +141,7 @@ const BackendSimulation = () => {
 
     const addNotificationResult = async () => {
       const res = await fetch(
-        `http://localhost:4000/notification/?email=${userData.email}&type=${type}`
+        `http://localhost:3000/notification/?email=${userData.email}&type=${type}`
       );
       const data = await res.json();
 
@@ -174,7 +167,7 @@ const BackendSimulation = () => {
     // Перевірка, чи вже існує користувач з таким email
     const changeMailResult = async () => {
       const res = await fetch(
-        `http://localhost:4000/changemail/?email=${email}&oldemail=${userData.email}&password=${password}`
+        `http://localhost:3000/changemail/?email=${email}&oldemail=${userData.email}&password=${password}`
       );
       const data = await res.json();
 

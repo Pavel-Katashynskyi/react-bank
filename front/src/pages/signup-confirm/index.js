@@ -46,7 +46,7 @@ const SignupConfirmPage = () => {
 
     const signupConfirmResult = async () => {
       const res = await fetch(
-        `http://localhost:4000/signup-confirm/?email=${userData.email}`
+        `http://localhost:3000/signup-confirm/?email=${userData.email}`
       );
       const data = await res.json();
 

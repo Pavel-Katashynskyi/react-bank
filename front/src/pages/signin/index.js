@@ -47,7 +47,7 @@ const SigninPage = () => {
 
     const signinResult = async () => {
       const res = await fetch(
-        `http://localhost:4000/signin/?email=${email}&password=${password}`
+        `http://localhost:3000/signin/?email=${email}&password=${password}`
       );
       const data = await res.json();
 

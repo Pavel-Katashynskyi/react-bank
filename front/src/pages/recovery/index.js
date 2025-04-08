@@ -41,7 +41,7 @@ const RecoveryPage = () => {
     // Перевірка наявності користувача в базі
 
     const recoveryResult = async () => {
-      const res = await fetch(`http://localhost:4000/recovery/?email=${email}`);
+      const res = await fetch(`http://localhost:3000/recovery/?email=${email}`);
       const data = await res.json();
 
       if (res.ok) {

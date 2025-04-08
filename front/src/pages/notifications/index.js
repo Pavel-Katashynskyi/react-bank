@@ -20,7 +20,7 @@ const NotificationsPage = () => {
   React.useEffect(() => {
     const fetchNotifications = async () => {
       const res = await fetch(
-        `http://localhost:4000/notifications/?email=${userData.email}`
+        `http://localhost:3000/notifications/?email=${userData.email}`
       );
       const data = await res.json();
 

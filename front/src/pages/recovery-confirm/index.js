@@ -71,7 +71,7 @@ const RecoveryConfirmPage = () => {
 
     const recoveryConfirmResult = async () => {
       const res = await fetch(
-        `http://localhost:4000/recovery-confirm/?email=${userData.email}&password=${password}`
+        `http://localhost:3000/recovery-confirm/?email=${userData.email}&password=${password}`
       );
       const data = await res.json();
 

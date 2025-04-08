@@ -66,7 +66,7 @@ const SettingsPage = () => {
 
     const changePasswordResult = async () => {
       const res = await fetch(
-        `http://localhost:4000/changepassword/?email=${userData.email}&oldpassword=${password2}&password=${password3}`
+        `http://localhost:3000/changepassword/?email=${userData.email}&oldpassword=${password2}&password=${password3}`
       );
       const data = await res.json();
 
@@ -114,7 +114,7 @@ const SettingsPage = () => {
 
     const changeMailResult = async () => {
       const res = await fetch(
-        `http://localhost:4000/changemail/?email=${email}&oldemail=${userData.email}&password=${password1}`
+        `http://localhost:3000/changemail/?email=${email}&oldemail=${userData.email}&password=${password1}`
       );
       const data = await res.json();
 
